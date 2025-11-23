@@ -28,7 +28,7 @@ function ShowProduct(name) {
   document.body.style.overflow = "hidden";
 
   show_display.innerHTML = `
-    <img src="/Cookies.webp" alt="Cookies">
+    <img src="Cookies.webp" alt="Cookies">
     <div>
       <h1>${name}</h1>
       <p>${desc[name]}</p>
@@ -44,3 +44,4 @@ function CloseShowProduct() {
   document.body.style.overflow = "";
 
 }
+
