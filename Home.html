@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Description">
+  <title>Bloom Bites</title>
+  <link rel="canonical" href="https://slideisthebest.github.io">
+  <link rel="icon" href="/Logo.png" type="image/png">
+  <link rel="stylesheet" href="/Styling.css">
+</head>
+<body>
+  <header>
+    <a href="/Home.html"><img src="/Logo.png" width="40px" alt="Bloom Bites"></a>
+    <nav>
+      <a href="/Home.html" style="border-bottom: solid 2.75px white">Home</a>
+      <a href="/About Us.html">About Us</a>
+    </nav>
+    <button onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdwnl_kyOfEeIXltYBZs7xOaLJYeECK2oA2zFIkTyDJIuvjdw/viewform?usp=header'">Pre-Order</a>
+  </header>
+  <main>
+    <section class="top">
+      <div>
+        Nutritious.<br>Appetizing.<br>Cookies.
+
+        <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth', block: 'start'})">Buy Now</button>
+      </div>
+    </section>
+    <section style="height: 60dvh">
+      <p class="fade_up">Four junior high school students, all with one goal, <span style="background-color: rgba(149, 214, 75, 0.7);">change the world</span>.</p>
+      <button class="fade_up" onclick="location.href = '/About Us.html'">About Us</button>
+    </section>
+    <section id="products">
+      <h1 class="fade_up">Our Products</h1>
+      <div>
+        <div class="fade_up" onclick="ShowProduct('Regular Cookies')">
+          <img src="/Cookies.webp" alt="Cookies">
+          <p>Regular Cookies</p>
+        </div>
+        <div class="fade_up" onclick="ShowProduct('Mini Cookies')">
+          <img src="/Cookies.webp" alt="Cookies">
+          <p>Mini Cookies</p>
+        </div>
+      </div>
+      <div>
+        <div class="fade_up" onclick="ShowProduct('Keychain')">
+          <img src="/Cookies.webp" alt="Cookies">
+          <p>Keychain</p>
+        </div>
+        <div class="fade_up" onclick="ShowProduct('Artwork')">
+          <img src="/Cookies.webp" alt="Cookies">
+          <p>Artwork</p>
+        </div>
+      </div>
+    </section>
+    <section class="bottom">
+      <h1 class="fade_up">Contacts</h1>
+
+      <p class="fade_up">Kathleen (WhatsApp): 0858-3938-6163</p>
+      <button class="fade_up" onclick="location.href = 'https://wa.me/6285839386163'">Chat</button>
+
+      <p class="fade_up">Instagram: @bloom._bites</p>
+      <button class="fade_up" onclick="location.href = 'https://www.instagram.com/direct/t/17843920854617928'">Chat</button>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Bloom Bites. All rights reserved.</p>
+  </footer>
+
+  <div id="show_product" class="hidden">
+    <div id="show_product_display"></div>
+  </div>
+
+  <script src="/Home.js"></script>
+</body>
+</html>
