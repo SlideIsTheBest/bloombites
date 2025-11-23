@@ -57,6 +57,12 @@ nav {
   gap: 30px;
 }
 
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 nav a {
   display: flex;
   align-items: center;
@@ -557,5 +563,8 @@ footer p {
   footer p {
     font-size: 15px;
   }
+}
 
+@keyframes spin {
+  to {transform: rotate(360deg);}
 }
