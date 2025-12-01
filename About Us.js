@@ -41,3 +41,7 @@ window.addEventListener("scroll", () => {
     speed = 360 / 15;
   }, 50);
 });
+
+function Preorder() {
+  location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdwnl_kyOfEeIXltYBZs7xOaLJYeECK2oA2zFIkTyDJIuvjdw/viewform?usp=header";
+}

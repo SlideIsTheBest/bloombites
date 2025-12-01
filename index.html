@@ -12,10 +12,12 @@
     <a id="logo" href="./"><img src="Logo.png" width="40px" height="40px" alt="Bloom Bites"></a>
     <nav>
       <a href="./" style="border-bottom: solid 2.75px white">Home</a>
-      <a href="about/">About Us</a>
+      <a href="about">About Us</a>
     </nav>
-    <button onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdwnl_kyOfEeIXltYBZs7xOaLJYeECK2oA2zFIkTyDJIuvjdw/viewform?usp=header'">Pre-Order</a>
+    <p id="timer">-</p>
+    <button id="preorder" onclick="Preorder()" disabled>Pre-Order</a>
   </header>
+  <div id="timer_container"><p id="timer_mobile">-</p></div>
   <main>
     <section class="top">
       <div>
@@ -55,10 +57,10 @@
       <h1 class="fade_up">Contacts</h1>
 
       <p class="fade_up">Kathleen (WhatsApp): 0858-3938-6163</p>
-      <button class="fade_up" onclick="location.href = 'https://wa.me/6285839386163'">Chat</button>
+      <button class="fade_up" onclick="WhatsApp()">Chat</button>
 
       <p class="fade_up">Instagram: @bloom._bites</p>
-      <button class="fade_up" onclick="location.href = 'https://www.instagram.com/direct/t/17843920854617928'">Chat</button>
+      <button class="fade_up" onclick="Instagram()">Chat</button>
     </section>
   </main>
   <footer>
@@ -70,11 +72,6 @@
   </div>
 
   <script src="Home.js"></script>
+  <script src="Timer.js"></script>
 </body>
-
 </html>
-
-
-
-
-

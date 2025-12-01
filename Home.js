@@ -62,7 +62,7 @@ function ShowProduct(name) {
     <div>
       <h1>${name}</h1>
       <p>${desc[name]}</p>
-      <button onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdwnl_kyOfEeIXltYBZs7xOaLJYeECK2oA2zFIkTyDJIuvjdw/viewform?usp=header'">Order Now</button>
+      <button onclick="Preorder()">Order Now</button>
       <button id="back" onclick="CloseShowProduct()">Back <img src="Right Arrow.png"></button>
     </div>
   `
@@ -72,4 +72,16 @@ function CloseShowProduct() {
   show.classList.add("hidden");
   document.documentElement.style.overflow = "";
   document.body.style.overflow = "";
+};
+
+function Preorder() {
+  location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdwnl_kyOfEeIXltYBZs7xOaLJYeECK2oA2zFIkTyDJIuvjdw/viewform?usp=header";
+}
+
+function WhatsApp() {
+  location.href = "https://wa.me/6285839386163";
+}
+
+function Instagram() {
+  location.href = "https://www.instagram.com/direct/t/17843920854617928";
 }
