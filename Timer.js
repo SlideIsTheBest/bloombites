@@ -4,7 +4,7 @@ const preorder = document.getElementById("preorder");
 
 var preorder_allow = false;
 
-const start_date = new Date(2025, 11, 3, 7, 0, 0).getTime();  // Month starts with 0 (January)
+const start_date = new Date(2025, 11, 3, 12, 0, 0).getTime();  // Month starts with 0 (January)
 const end_date = new Date(2025, 11, 10, 23, 59, 59).getTime();
 
 const countdown = setInterval(() => {
@@ -38,7 +38,7 @@ const countdown = setInterval(() => {
     
     preorder.disabled = true;
     return;
-  } else if (end_diff <= 0) {
+  } else if (end_diff < 0 {
     timer.innerHTML = "Coming Soon!";
     timer_mobile.innerHTML = "Coming Soon!";
     preorder.disabled = true;
@@ -72,5 +72,6 @@ const countdown = setInterval(() => {
   }; 
   
 }, 1000);
+
 
 
