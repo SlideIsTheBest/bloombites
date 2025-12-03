@@ -5,7 +5,7 @@ const preorder = document.getElementById("preorder");
 var preorder_allow = false;
 
 const start_date = new Date(2025, 11, 3, 12, 0, 0).getTime();  // Month starts with 0 (January)
-const end_date = new Date(2025, 11, 10, 23, 59, 59).getTime();
+const end_date = new Date(2025, 11, 8, 23, 59, 59).getTime();
 
 const countdown = setInterval(() => {
   const now = new Date().getTime();
@@ -23,11 +23,11 @@ const countdown = setInterval(() => {
     timer_mobile.style.fontSize = "15px";
 
     if (days > 0) {
-    timer.innerHTML = `Opening in ${days}d ${hours}h ${minutes}m ${seconds}s`;
-    timer_mobile.innerHTML = `Opening in ${days}d ${hours}h ${minutes}m ${seconds}s`;
+      timer.innerHTML = `Opening in ${days}d ${hours}h ${minutes}m ${seconds}s`;
+      timer_mobile.innerHTML = `Opening in ${days}d ${hours}h ${minutes}m ${seconds}s`;
     } else if (hours > 0) {
-    timer.innerHTML = `Opening in ${hours}h ${minutes}m ${seconds}s`;
-    timer_mobile.innerHTML = `Opening in ${hours}h ${minutes}m ${seconds}s`;
+      timer.innerHTML = `Opening in ${hours}h ${minutes}m ${seconds}s`;
+      timer_mobile.innerHTML = `Opening in ${hours}h ${minutes}m ${seconds}s`;
     } else if (minutes > 0) {
       timer.innerHTML = `Opening in ${minutes}m ${seconds}s`;
       timer_mobile.innerHTML = `Opening in ${minutes}m ${seconds}s`;
@@ -72,6 +72,7 @@ const countdown = setInterval(() => {
   }; 
   
 }, 1000);
+
 
 
 
