@@ -38,40 +38,40 @@ const countdown = setInterval(() => {
     
     preorder.disabled = true;
     return;
-  } else if (end_diff < 0 {
+  } else if (end_diff < 0) {
     timer.innerHTML = "Coming Soon!";
     timer_mobile.innerHTML = "Coming Soon!";
     preorder.disabled = true;
     clearInterval(countdown);
     return;
-  }
-
-  preorder_allow = true;
-  preorder.disabled = false;
-
-  const days = Math.floor(end_diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((end_diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((end_diff % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((end_diff % (1000 * 60)) / 1000);
-
-  timer.style.fontSize = "18px";
-  timer_mobile.style.fontSize = "18px";
-
-  if (days > 0) {
-    timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    timer_mobile.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-  } else if (hours > 0) {
-    timer.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
-    timer_mobile.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
-  } else if (minutes > 0) {
-    timer.innerHTML = `${minutes}m ${seconds}s`;
-    timer_mobile.innerHTML = `${minutes}m ${seconds}s`;
   } else {
-    timer.innerHTML = `${seconds}s`;
-    timer_mobile.innerHTML = `${seconds}s`;
-  }; 
-  
+    preorder_allow = true;
+    preorder.disabled = false;
+
+    const days = Math.floor(end_diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((end_diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((end_diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((end_diff % (1000 * 60)) / 1000);
+
+    timer.style.fontSize = "18px";
+    timer_mobile.style.fontSize = "18px";
+
+    if (days > 0) {
+      timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      timer_mobile.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    } else if (hours > 0) {
+      timer.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+      timer_mobile.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+    } else if (minutes > 0) {
+      timer.innerHTML = `${minutes}m ${seconds}s`;
+      timer_mobile.innerHTML = `${minutes}m ${seconds}s`;
+    } else {
+      timer.innerHTML = `${seconds}s`;
+      timer_mobile.innerHTML = `${seconds}s`;
+    }; 
+  };
 }, 1000);
+
 
 
 
