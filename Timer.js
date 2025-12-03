@@ -25,10 +25,17 @@ const countdown = setInterval(() => {
     if (days > 0) {
     timer.innerHTML = `Opening in ${days}d ${hours}h ${minutes}m ${seconds}s`;
     timer_mobile.innerHTML = `Opening in ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    } else if (hours > 0) {
+    timer.innerHTML = `Opening in ${hours}h ${minutes}m ${seconds}s`;
+    timer_mobile.innerHTML = `Opening in ${hours}h ${minutes}m ${seconds}s`;
+    } else if (minutes > 0) {
+      timer.innerHTML = `Opening in ${minutes}m ${seconds}s`;
+      timer_mobile.innerHTML = `Opening in ${minutes}m ${seconds}s`;
     } else {
-      timer.innerHTML = `Opening in ${hours}h ${minutes}m ${seconds}s`;
-      timer_mobile.innerHTML = `Opening in ${hours}h ${minutes}m ${seconds}s`; 
-    }
+      timer.innerHTML = `Opening in ${seconds}s`;
+      timer_mobile.innerHTML = `Opening in ${seconds}s`;
+    }; 
+    
     preorder.disabled = true;
     return;
   } else if (end_diff <= 0) {
@@ -65,4 +72,5 @@ const countdown = setInterval(() => {
   }; 
   
 }, 1000);
+
 
