@@ -5,7 +5,7 @@ const preorder = document.getElementById("preorder");
 var preorder_allow = false;
 
 const start_date = new Date(2025, 11, 3, 12, 0, 0).getTime();  // Month starts with 0 (January)
-const end_date = new Date(2025, 11, 9, 11, 59, 59).getTime();
+const end_date = new Date(2025, 11, 9, 12, 0, 0).getTime();
 
 const countdown = setInterval(() => {
   const now = new Date().getTime();
@@ -71,6 +71,7 @@ const countdown = setInterval(() => {
     }; 
   };
 }, 1000);
+
 
 
 
