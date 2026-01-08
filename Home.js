@@ -59,7 +59,7 @@ function ShowProduct(name) {
 
   if (preorder_allow) {
   show_display.innerHTML = `
-    <img src="${name}.jpg" alt="Cookies">
+    <div class="img"><img src="${name}.jpg" alt="Cookies"></div>
     <div>
       <h1>${name}</h1>
       <p>${desc[name]}</p>
@@ -68,7 +68,7 @@ function ShowProduct(name) {
     </div>`;
   } else {
     show_display.innerHTML = `
-    <img src="${name}.jpg" alt="Cookies">
+    <div class="img"><img src="${name}.jpg" alt="Cookies"></div>
     <div>
       <h1>${name}</h1>
       <p>${desc[name]}</p>
@@ -94,5 +94,4 @@ function WhatsApp() {
 
 function Instagram() {
   location.href = "https://www.instagram.com/bloom._bites/";
-
 }
